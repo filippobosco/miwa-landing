@@ -55,7 +55,7 @@ function Input({
         onChange={onChange}
         required={required}
         placeholder={placeholder}
-        className="w-full bg-white/5 border border-white/10 text-white placeholder-white/20 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent/50 transition-colors duration-200"
+        className="w-full bg-white/5 border border-white/10 text-white placeholder-white/20 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent/50 transition-colors duration-200 font-montserrat"
       />
     </div>
   );
