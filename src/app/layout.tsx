@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   title: "Ingrosso Abbigliamento Milano | 50€ Buono MIWA",
   description:
     "Grossista moda Milano per boutique. Ricevi 50€ su 200€ di spesa. Registrati ora e accedi al catalogo B2B MIWA.",
+  other: {
+    "facebook-domain-verification": "53ik1s5bii42ycpgtsjge2torhzrts",
+  },
 };
 
 export default function RootLayout({
