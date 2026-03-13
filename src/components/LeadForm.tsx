@@ -73,8 +73,17 @@ export default function LeadForm() {
   const handleSubmit = async (e: { preventDefault(): void }) => {
     e.preventDefault();
     setLoading(true);
-    // Placeholder — sostituire con API reale (es. Resend, Formspree, ecc.)
-    await new Promise((r) => setTimeout(r, 1200));
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbylF_UvRL5NrReUlYS9zzjqdtm9H9Yuxyd_Ybttq1Co6_BDgjDUkicNK9zEmoRpJE1zbA/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(form),
+        }
+      );
+    } catch {
+      // ignora errori di rete — il redirect avviene comunque
+    }
     router.push("/thank-you");
   };
 
