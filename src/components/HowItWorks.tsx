@@ -88,7 +88,7 @@ export default function HowItWorks() {
               style={{ aspectRatio: "4/5" }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=900&q=80&auto=format&fit=crop&crop=center"
+                src="/appendi.jpg"
                 alt="Abbigliamento fashion store"
                 fill
                 className="object-cover"

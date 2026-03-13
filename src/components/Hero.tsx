@@ -10,7 +10,7 @@ const fadeUp = (delay: number) => ({
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end pb-16 pt-24 md:pb-24 md:pt-32 overflow-hidden bg-black">
+    <section className="relative min-h-screen flex flex-col justify-end pb-16 pt-24 md:pb-24 md:pt-32 overflow-hidden bg-black">
       {/* Background video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -27,20 +27,17 @@ export default function Hero() {
       {/* Dark overlay for text legibility */}
       <div className="absolute inset-0 z-10 bg-gradient-to-t from-dark/75 via-dark/25 to-dark/10" />
 
-      <div className="container mx-auto px-6 lg:px-12 max-w-7xl w-full relative z-20 text-center flex flex-col items-center">
+      <div className="w-full relative z-20 px-6 lg:px-12" style={{ textAlign: "center" }}>
         {/* Headline */}
-        <h1 className="font-display text-white text-5xl md:text-6xl lg:text-[5.75rem] leading-[0.9] font-light mb-8">
-          <motion.span className="block" {...fadeUp(0.1)}>
-            Ingrosso moda
-          </motion.span>
-          <motion.span className="block" {...fadeUp(0.2)}>
-            per boutique.
-          </motion.span>
+        <h1 className="font-display text-white text-5xl md:text-6xl lg:text-[5.75rem] leading-[0.9] font-light mb-8" style={{ textAlign: "center" }}>
+          <motion.span {...fadeUp(0.1)}>Ingrosso moda</motion.span>
+          <br />
+          <motion.span {...fadeUp(0.2)}>per boutique.</motion.span>
         </h1>
 
         {/* Sub-headline */}
         <motion.p
-          className="text-white/75 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
+          className="text-white/75 text-lg md:text-xl mb-10 leading-relaxed text-center"
           {...fadeUp(0.45)}
         >
           <span className="md:whitespace-nowrap">Registrati e ricevi €50 di sconto sul tuo primo ordine da €200.</span>
@@ -49,7 +46,7 @@ export default function Hero() {
         </motion.p>
 
         {/* CTA buttons */}
-        <motion.div className="flex flex-col sm:flex-row gap-4" {...fadeUp(0.6)}>
+        <motion.div className="flex flex-col sm:flex-row gap-4 justify-center" {...fadeUp(0.6)}>
           <a
             href="#contatti"
             className="inline-flex items-center justify-center bg-white text-dark px-8 py-4 rounded-full text-sm font-medium tracking-wide hover:bg-accent transition-colors duration-300"

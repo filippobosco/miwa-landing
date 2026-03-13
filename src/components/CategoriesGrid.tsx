@@ -6,16 +6,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import AnimateIn from "./AnimateIn";
 
 const pages = [
-  { num: "01", img: "/1.png" },
-  { num: "02", img: "/2.png" },
-  { num: "03", img: "/3.png" },
-  { num: "04", img: "/4.png" },
-  { num: "05", img: "/5.png" },
-  { num: "06", img: "/6.png" },
-  { num: "07", img: "/7.png" },
-  { num: "08", img: "/8.png" },
-  { num: "09", img: "/9.png" },
-  { num: "10", img: "/10.png" },
+  { num: "01", img: "/1.jpg" },
+  { num: "02", img: "/2.jpg" },
+  { num: "03", img: "/3.jpg" },
+  { num: "04", img: "/4.jpg" },
+  { num: "05", img: "/5.jpg" },
+  { num: "06", img: "/6.jpg" },
+  { num: "07", img: "/7.jpg" },
+  { num: "08", img: "/8.jpg" },
+  { num: "09", img: "/9.jpg" },
+  { num: "10", img: "/10.jpg" },
 ];
 
 const TOTAL_SPREADS = Math.ceil(pages.length / 2);
