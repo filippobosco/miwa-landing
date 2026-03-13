@@ -78,6 +78,7 @@ export default function LeadForm() {
         "https://script.google.com/macros/s/AKfycbylF_UvRL5NrReUlYS9zzjqdtm9H9Yuxyd_Ybttq1Co6_BDgjDUkicNK9zEmoRpJE1zbA/exec",
         {
           method: "POST",
+          mode: "no-cors",
           body: JSON.stringify(form),
         }
       );
